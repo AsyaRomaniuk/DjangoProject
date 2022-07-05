@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="static/css/base.css">
+    <link rel="icon" href="static/images/favicon.png">
+    {% block css %}{% endblock %}
+</head>
+<body>
+<header>
+    <div id="header">
+        <div id="logo">
+            <div class="logo-title" title="На головну сторінку" onclick="window.location = '/'">
+                <a style="color: blue;margin: 0;padding: 0">#Save</a><a style="color: yellow;margin: 0;padding: 0">Ukraine</a><a
+                    style="color: black;margin: 0;padding: 0">From</a><a style="color: red;margin: 0;padding: 0">Bastards</a>
+                <!--                #SaveUkraineFromBastards-->
+            </div>
+            <div>{% block logoDescription %}{% endblock %}</div>
+            <!--            Перелік осіб - загрози для України-->
+        </div>
+        <div class="sign" title="Увійти в профіль" onclick="window.location = '/sign-in'">
+            Увійти
+        </div>
+        <div class="sign" title="Створити профіль" onclick="window.location = '/sign-up'">
+            Зареєструватися
+        </div>
+    </div>
+</header>
+<div class="outer-container">
+    {% block outerContainer %}{% endblock %}
+</div>
+<footer>
+    <div id="footer">
+        <p>Copyright © tarasromaniuk2003@gmail.com, 2022. Всі права захищені.</p>
+        <a href="/about">Деталі про автора</a>
+    </div>
+</footer>
+</body>
+<script type="text/javascript" src="static/js/base.js"></script>
+{% block js %}
+{% endblock %}
+</html>

@@ -1,0 +1,278 @@
+{% extends 'main/emptyBase.html' %}
+
+{% block title %}
+Мої проєкти
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="static/css/devProjects.css">
+{% endblock %}
+
+{% block js %}
+<script type="text/javascript" src="static/js/devProjects.js"></script>
+{% endblock %}
+
+{% block innerHTML %}
+<div class="root">
+    <div class="projects-title">
+        Мої проєкти
+    </div>
+    <div class="projects-grid-layout">
+        <div class="project-elem">
+            <video class="project-video">
+                <source src="static\videos\2048.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+            <div class="project-name">
+                Гра 2048
+            </div>
+            <div class="project-creation-year">
+                2021
+            </div>
+            <div class="project-languages">
+                <p>
+                    <img class="icon" src="static\images\python.png" alt="python">Python
+                </p>
+            </div>
+            <div class="project-description">
+                Мета гри — складаючи плитки з числами, отримати плитку номіналу «2048», звідки й назва.
+            </div>
+        </div>
+        <div class="project-elem">
+            <video class="project-video">
+                <source src="static\videos\agar.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+            <div class="project-name">
+                Гра Agar.io
+            </div>
+            <div class="project-creation-year">
+                2021
+            </div>
+            <div class="project-languages">
+                <p>
+                    <img class="icon" src="static\images\python.png" alt="python">Python
+                </p>
+            </div>
+            <div class="project-description">
+                Мета гри — набрати якнайбільшу масу, поїдаючи менші клітини, й не ставши жертвою більших.
+            </div>
+        </div>
+        <div class="project-elem">
+            <video class="project-video">
+                <source src="static\videos\sapper.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+            <div class="project-name">
+                Гра сапер
+            </div>
+            <div class="project-creation-year">
+                2021
+            </div>
+            <div class="project-languages">
+                <p>
+                    <img class="icon" src="static\images\python.png" alt="python">Python
+                </p>
+            </div>
+            <div class="project-description">
+                Мета гри полягає в тому, щоб очистити прямокутну дошку, що містить приховані «міни» або бомби, не
+                підриваючи жодної з них, за допомогою підказок про кількість сусідніх мін у кожному полі.
+            </div>
+        </div>
+        <div class="project-elem">
+            <video class="project-video">
+                <source src="static\videos\console2dgame.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+            <div class="project-name">
+                2D гра в командному рядку
+            </div>
+            <div class="project-creation-year">
+                2021
+            </div>
+            <div class="project-languages">
+                <p>
+                    <img class="icon" src="static\images\clang.png" alt="clang">Clang
+                </p>
+            </div>
+            <div class="project-description">
+                2D гра в командному рядку з власне створеним рушієм. До 200 рядків вихідного коду!
+            </div>
+        </div>
+        <div class="project-elem">
+            <video class="project-video">
+                <source src="static\videos\windowcrasher.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+            <div class="project-name">
+                "Window Crasher"
+            </div>
+            <div class="project-creation-year">
+                2020
+            </div>
+            <div class="project-languages">
+                <p>
+                    <img class="icon" src="static\images\python.png" alt="python">Python
+                </p>
+            </div>
+            <div class="project-description">
+                Симулює розбиття головного екрана
+            </div>
+        </div>
+        <div class="project-elem">
+            <video class="project-video">
+                <source src="static\videos\paint.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+            <div class="project-name">
+                Paint-малювання
+            </div>
+            <div class="project-creation-year">
+                2019
+            </div>
+            <div class="project-languages">
+                <p>
+                    <img class="icon" src="static\images\python.png" alt="python">Python
+                </p>
+            </div>
+            <div class="project-description">
+                Мій варіант Paint на Python
+            </div>
+        </div>
+        <div class="project-elem">
+            <video class="project-video">
+                <source src="static\videos\snow.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+            <div class="project-name">
+                Сніжинки
+            </div>
+            <div class="project-creation-year">
+                2021
+            </div>
+            <div class="project-languages">
+                <p>
+                    <img class="icon" src="static\images\python.png" alt="python">Python
+                </p>
+                <p>
+                    <img class="icon" src="static\images\ruby.png" alt="ruby">Ruby
+                </p>
+                <p>
+                    <img class="icon" src="static\images\javascript.png" alt="javascript">JavaScript
+                </p>
+            </div>
+            <div class="project-description">
+                Падаючі сніжинки на передньому фоні. Чудово підійде для підняття новорічного настрою.
+            </div>
+        </div>
+        <div class="project-elem">
+            <video class="project-video">
+                <source src="static\videos\helicopter.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+            <div class="project-name">
+                "Гелікоптер"
+            </div>
+            <div class="project-creation-year">
+                2021
+            </div>
+            <div class="project-languages">
+                <p>
+                    <img class="icon" src="static\images\python.png" alt="python">Python
+                </p>
+                <p>
+                    <img class="icon" src="static\images\ruby.png" alt="ruby">Ruby
+                </p>
+                <p>
+                    <img class="icon" src="static\images\javascript.png" alt="javascript">JavaScript
+                </p>
+                <p>
+                    <img class="icon" src="static\images\delphi.png" alt="delphi">Delphi
+                </p>
+            </div>
+            <div class="project-description">
+                Лабораторне завдання задане викладачем НАУ Вороновим С.І.
+                Суть завдання полягає у відображенні безпечних зон гелікопера та певних рекомендацій щодо польоту
+                гелікоптера, що показують координати безпечного польоту. Завдання було виконане декількома мовами
+                програмування.
+            </div>
+        </div>
+        <div class="project-elem">
+            <video class="project-video">
+                <source src="static\videos\entities.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+            <div class="project-name">
+                "Entities"
+            </div>
+            <div class="project-creation-year">
+                2021
+            </div>
+            <div class="project-languages">
+                <p>
+                    <img class="icon" src="static\images\python.png" alt="python">Python
+                </p>
+            </div>
+            <div class="project-description">
+                Програма "Entities" симулює поділ деяких істот за вказаними параметрами. Результат виконання програми
+                оформлюється у вигляді графіків бібліотеки matplotlib.
+            </div>
+        </div>
+        <div class="project-elem">
+            <video class="project-video">
+                <source src="static\videos\uthon.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+            <div class="project-name">
+                Uthon
+            </div>
+            <div class="project-creation-year">
+                2020
+            </div>
+            <div class="project-languages">
+                <p>
+                    <img class="icon" src="static\images\python.png" alt="python">Python
+                </p>
+            </div>
+            <div class="project-description">
+                Uthon ( "Ukrainian python" ) - власне створена мова програмування, що виконує певні команди українською
+                мовою та виконує їх. Сама мова побудована таким чином, вона перекладає певні ключові слова мови Uthon
+                у мову Python після чого виконується. Крім самого інтепрератора в проєкті присутнє власне
+                створене інтегроване середовище розробки з підсвіткою синтаксису.
+            </div>
+        </div>
+        <div class="project-elem">
+            <video class="project-video">
+                <source src="static\videos\controller.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+            <div class="project-name">
+                Laptop controller
+            </div>
+            <div class="project-creation-year">
+                2022
+            </div>
+            <div class="project-languages">
+                <p>
+                    <img class="icon" src="static\images\java.png" alt="java">Java
+                </p>
+                <p>
+                    <img class="icon" src="static\images\python.png" alt="python">Python
+                </p>
+            </div>
+            <div class="project-description">
+                Користувач телефона віддає python команди на виконання серверу. Даний проєкт розподілений
+                на дві програми: клієнтську - мобільний додаток написаний на Java, серверну - програма сервера написана
+                на Python. Обидві програми використовують технологію Socket, що під'єднує певні пристрої зовнішнєю IP
+                адресою (в мому випадку через WI-FI).
+            </div>
+        </div>
+    </div>
+    <div class="projects-title">
+        Та багато інших проєктів можна переглянути в моєму GitHub
+        <a href="https://github.com/AsyaRomaniuk">
+            https://github.com/AsyaRomaniuk
+        </a>
+    </div>
+</div>
+{% endblock %}

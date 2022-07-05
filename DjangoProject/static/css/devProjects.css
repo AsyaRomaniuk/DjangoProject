@@ -1,0 +1,77 @@
+.root {
+    --video-width-def: 200px;
+    --video-width: 300px;
+    --project-name-fg: #2566ff;
+}
+body {
+    font-family: Verdana, sans-serif ;
+}
+p {
+  line-height: 0;
+}
+.projects-title {
+    text-align: center;
+    margin: 50px;
+    font-size: 2em;
+    font-family: Impact, fantasy;
+    letter-spacing: 4px;
+    color: darkslateblue;
+}
+.projects-grid-layout {
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+}
+.project-elem {
+    margin: 40px;
+}
+.project-video {
+    cursor: pointer;
+    border-radius: 10px;
+    width: var(--video-width-def);
+    box-shadow: 0 0 5px 1px grey;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+}
+.project-video-fullscreen {
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    width: 70%;
+    height: 70%;
+    transform: translate(50%, -50%);
+    transition: 0.5s all;
+}
+.project-video:hover {
+    width: var(--video-width);
+    border-radius: 0px;
+    box-shadow: 0 0 5px 5px white;
+}
+.project-name {
+    text-shadow: 2px 2px 2px #676767;
+    color: var(--project-name-fg);
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.project-creation-year {
+    color: #494949;
+}
+.project-creation-year:before {
+    content: "Рік створення:";
+}
+.project-languages {
+
+}
+.project-description {
+    color: #a2a2a2;
+}
+.icon {
+    width: 16px;
+    height: 16px;
+}

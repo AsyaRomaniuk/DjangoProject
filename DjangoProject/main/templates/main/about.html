@@ -1,0 +1,40 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Деталі про автора
+{% endblock %}
+
+{% block logoDescription %}
+Збережи Україну від ворожих виродків!
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="static/css/about.css">
+{% endblock %}
+
+{% block js %}
+<script type="text/javascript" src="static/js/about.js"></script>
+{% endblock %}
+
+{% block outerContainer %}
+<div class="about-main">
+    <div class="about">
+        <img class="about-me-photo" src="static/images/aboutMePhoto.jpg">
+    </div>
+    <div class="about-me-description">
+        <p>
+            Студент НАУ 2-курс, Романюк Т.А.
+        </p>
+        <p>
+            E-mail: tarasromaniuk2003@gmail.com<br>
+            Github:
+            <a href="https://github.com/AsyaRomaniuk"><br>https://github.com/AsyaRomaniuk
+            </a>
+        <p>
+            <a href="dev-projects">
+                Переглянути мої проєкти
+            </a>
+        </p>
+    </div>
+</div>
+{% endblock %}

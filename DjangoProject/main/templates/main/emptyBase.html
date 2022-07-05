@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="static/css/emptyBase.css">
+    <link rel="icon" href="static/images/favicon.png">
+    {% block css %}{% endblock %}
+</head>
+<body>
+<div class="inner-container">
+    {% block innerHTML %}{% endblock %}
+</div>
+</body>
+<script type="text/javascript" src="static/js/emptyBase.js"></script>
+{% block js %}
+{% endblock %}
+</html>

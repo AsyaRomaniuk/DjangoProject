@@ -1,0 +1,28 @@
+{% extends 'main/base.html' %}
+
+{% block css %}
+<link rel="stylesheet" href="static/css/signBase.css">
+{% endblock %}
+
+{% block css2 %}
+{% endblock %}
+
+{% block js %}
+<script type="text/javascript" src="static/js/signBase.js"></script>
+{% endblock %}
+
+{% block js2 %}
+{% endblock %}
+
+{% block outerContainer %}
+<div class="main-frame">
+    <h1 style="text-align: center">
+        {% block signState %}
+        {% endblock %}
+    </h1>
+    <form class="signing-frame">
+        {% block signingForm %}
+        {% endblock %}
+    </form>
+</div>
+{% endblock %}

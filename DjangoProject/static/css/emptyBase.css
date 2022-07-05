@@ -1,0 +1,22 @@
+:root {
+    --header-bg: #303134;
+    --outer-bg: #202124;
+    --footer-bg: #5c5d5f;
+    --main-fg: #bdc1c6;
+    --title-fg: #969ba1;
+}
+::selection {
+    background-color: #606060;
+}
+.inner-container {
+}
+body {
+    background: var(--outer-bg);
+    color: var(--main-fg);
+    padding: 0px;
+    margin: 0px;
+    font-family: FreeMono, monospace;
+    font-size: 1.2em;
+    background: linear-gradient(90deg,  black 0%, var(--outer-bg) 100%);
+    height: 100vh;
+}

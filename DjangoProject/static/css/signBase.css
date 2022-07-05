@@ -1,0 +1,47 @@
+.main-frame {
+    margin: 50px auto 50px auto;
+}
+.signing-frame {
+    margin: 0 auto;
+    border: 1px solid var(--header-bg);
+    padding: 10px;
+    border-radius: 6px;
+    padding-right: 20px;
+    width: 300px;
+    box-shadow: 0 0 5px 1px grey;
+    -webkit-transition: box-shadow 500ms ease-out;
+    -moz-transition: box-shadow 500ms ease-out;
+    -o-transition: box-shadow 500ms ease-out;
+    transition: box-shadow 500ms ease-out;
+}
+.signing-frame:hover {
+    box-shadow: 0 0 10px 10px green;
+}
+.signing-frame-elem {
+    box-sizing: content-box;
+    margin: 10px 0 10px 0;
+    width: 100%;
+    line-height: 20px;
+}
+.signing-frame-elem-input {
+    background-color: var(--outer-bg);
+    border: 1px solid var(--footer-bg);
+    border-radius: 6px;
+    color: var(--main-fg);
+}
+.sign-in-button {
+    background-color: #32b94c;
+    border-color: #32b94c;
+    cursor: pointer;
+    color: var(--main-fg);
+    border-radius: 6px;
+    padding: 6px 0 6px 0;
+    -webkit-transition: background-color 100ms ease-out;
+    -moz-transition: background-color 100ms ease-out;
+    -o-transition: background-color 100ms ease-out;
+    transition: background-color 100ms ease-out;
+}
+.sign-in-button:hover {
+    background-color: #3eda5c;
+    border-color: #3eda5c;
+}

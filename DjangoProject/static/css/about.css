@@ -1,0 +1,17 @@
+.about-main {
+    margin: 0 auto;
+    text-align: center;
+}
+.about {
+
+}
+.about-me-photo {
+    border: 5px solid var(--title-fg);
+    padding: 6px;
+    border-radius: 100%;
+    margin: 30px 0;
+    box-shadow: 0px 0px 20px 10px white;
+}
+.about-me-description {
+    text-align: center;
+}

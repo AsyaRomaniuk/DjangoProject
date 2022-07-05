@@ -1,0 +1,35 @@
+{% extends 'main/signBase.html' %}
+
+{% block title %}
+Реєстрація
+{% endblock %}
+
+{% block logoDescription %}
+Збережи Україну від ворожих виродків!
+{% endblock %}
+
+{% block css2 %}
+<link rel="stylesheet" href="static/css/signUp.css">
+{% endblock %}
+
+{% block js2 %}
+<script type="text/javascript" src="static/js/signUp.js"></script>
+{% endblock %}
+
+{% block signState %}
+Зареєструватися
+{% endblock %}
+
+{% block signingForm %}
+<label for="login_field" class="signing-frame-elem">
+    Email-адреса
+</label>
+<input id="login-field" type="text" name="login" autocomplete="username"
+       class="signing-frame-elem signing-frame-elem-input">
+<label for="password">
+    Пароль
+</label>
+<input id="password" type="password" autocomplete="current-password"
+       class="signing-frame-elem signing-frame-elem-input">
+<input value="Створити" type="submit" name="commit" class="signing-frame-elem sign-in-button">
+{% endblock %}

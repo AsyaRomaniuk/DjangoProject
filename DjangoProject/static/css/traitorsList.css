@@ -1,0 +1,39 @@
+:root {
+    --photo-width: 400px;
+    --photo-height: 300px;
+}
+.inner {
+    margin: 0 auto;
+}
+.traitors-list {
+    display: flex;
+}
+.photo-element {
+    text-align: center;
+    padding: 4px;
+    border-radius: 5%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 50px;
+}
+.photo {
+    border-radius: 5%;
+    width: var(--photo-width);
+    height: var(--photo-height);
+    border: 3px solid #990000;
+}
+li {
+    list-style-type: none;
+    float: left;
+}
+.name {
+    background: var(--footer-bg);
+    font-size: 1.5em;
+}
+.description {
+    width: var(--photo-width);
+    height: var(--photo-height);
+    background: var(--header-bg);
+    border-radius: 0 0 15% 15%;
+    margin: 0 auto;
+}
